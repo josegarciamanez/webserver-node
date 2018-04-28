@@ -3,7 +3,7 @@ const app = express()
 const hbs = require('hbs')
 require('./hbs/helpers')
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000
 
 app.use(express.static(__dirname + '/public'))
 
@@ -11,10 +11,9 @@ app.use(express.static(__dirname + '/public'))
 hbs.registerPartials(__dirname + '/views/parciales')
 app.set('view engine', 'hbs')
 
-
 app.get('/', (req, res) => {
     res.render('home', {
-        nombre: 'jose garcia mañez'
+        nombre: 'capitán américa'
     })
 })
 app.get('/about', (req, res) => {
