@@ -19,6 +19,12 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about')
 })
+app.get('/item3', (req, res) => {
+    res.render('item3')
+})
+app.get('/item4', (req, res) => {
+    res.render('item4')
+})
 
 app.listen(port, () => {
     console.log(`Escuchando Peticiones en el puerto ${port}`)
