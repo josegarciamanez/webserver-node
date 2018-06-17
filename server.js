@@ -19,11 +19,11 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about')
 })
-app.get('/item3', (req, res) => {
-    res.render('item3')
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio')
 })
-app.get('/item4', (req, res) => {
-    res.render('item4')
+app.get('/contact', (req, res) => {
+    res.render('contact')
 })
 
 app.listen(port, () => {
